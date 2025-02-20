@@ -7,13 +7,13 @@ let sentenceBuilder = {
     object: "coding",
     
     buildSentence: function() {
-        if(this.subject&&this.verb&&this.object) // checks if all the keys were present
+        if(this.subject&&this.verb&&this.object) 
             console.log(this.subject+" "+this.verb+" "+this.object)
         else
             console.log("Incomplete sentence")
     },
     updateProperty: function(property, value) {
-        if(sentenceBuilder.hasOwnProperty(property))  //checks if the property is present in object
+        if(sentenceBuilder.hasOwnProperty(property)) 
             sentenceBuilder[property]=[value]
         
         else
